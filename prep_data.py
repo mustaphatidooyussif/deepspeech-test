@@ -5,8 +5,8 @@ import csv
 train_dir = 'C:/Users/Mustapha/Desktop/Nokwary/audios/wave/train'
 dev_dir = 'C:/Users/Mustapha/Desktop/Nokwary/audios/wave/dev'
 test_dir = 'C:/Users/Mustapha/Desktop/Nokwary/audios/wave/test'
-path = "C:/Users/Mustapha/Desktop/Nokwary/audios/wave/files/"
-trans_file = "C:/Users/Mustapha/Desktop/Nokwary/audios/wave/original.txt"
+path = "C:/Users/Mustapha/Desktop/Nokwary/audios/wave/clips/"
+trans_file = "C:/Users/Mustapha/Desktop/Nokwary/audios/wave/original.tsv"
 ignore = ['.git', 'original.txt', 'transcription.txt']
 # print(os.listdir(path))
 NUM_AUDIOS = 30

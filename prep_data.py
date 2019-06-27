@@ -31,15 +31,17 @@ train, dev , test  = train_dev_test_split(data)
 
 with open(train_dir + '/train.csv', 'w', newline='') as csvfile:
     filewriter = csv.writer(csvfile, delimiter=',')
+    filewriter.writerow(['wav_filename','wav_filesize','transcript'])
     for r in train:
         filewriter.writerow(r)
     
 with open(dev_dir + '/dev.csv', 'w', newline='') as csvfile:
     filewriter = csv.writer(csvfile, delimiter=',')
+    filewriter.writerow(['wav_filename','wav_filesize','transcript'])
     for r in dev:
         filewriter.writerow(r)
     
 with open(test_dir + '/test.csv', 'w',  newline='') as csvfile:
     filewriter = csv.writer(csvfile, delimiter=',')
-    for r in test:
-        filewriter.writerow(r)
+    filewriter.writerow(['wav_filename','wav_filesize','transcript'])
+    filewriter.writerows(test)
